@@ -231,7 +231,7 @@ input, textarea, select, button {
     margin-right: -100px;
     z-index: 1;
     transform: translateX(-140%);
-    /* transition: 0.7s; */
+    transition: 0.7s;
 }
 .value-text__why-us {
     display: flex;
@@ -298,7 +298,7 @@ input, textarea, select, button {
     object-position: 0% 10%;
     border-radius: 0px 80px;
     transform: translateX(200%);
-    /* transition: 0.7s; */
+    transition: 0.7s;
 }
 .show-animate .value-text,
 .show-animate .value-img {
