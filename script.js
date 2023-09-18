@@ -223,7 +223,6 @@ let refreshTrainersInterval = setInterval(()=> {trainerNextBtn.click()}, 5000)
 // Our Partners
 const partnersImages = document.querySelectorAll('.partners-logos img')
 partnersImages.forEach(image => {
-    console.log(image)
     let imageWidth = image.naturalWidth
     image.style.width = (imageWidth / 2) + "px"
 })

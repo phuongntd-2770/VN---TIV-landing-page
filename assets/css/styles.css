@@ -45,7 +45,7 @@ input, textarea, select, button {
 .btn:hover {
     --tiv: linear-gradient(to right top, #ED3224, #ED772C);
     background: var(--tiv);
-    -webkit-text-fill-color: #D0D5DD;
+    -webkit-text-fill-color: #fff;
 }
 /* Header */
 .header {
@@ -146,7 +146,7 @@ input, textarea, select, button {
     left: 0;
     z-index: -1;
     width: 100%;
-    min-width: 1130px;
+    min-width: 1320px;
 }
 .hero__btn {
     --tiv: linear-gradient(to right top, #ED3224, #ED772C);
@@ -231,7 +231,7 @@ input, textarea, select, button {
     margin-right: -100px;
     z-index: 1;
     transform: translateX(-140%);
-    transition: 0.7s;
+    /* transition: 0.7s; */
 }
 .value-text__why-us {
     display: flex;
@@ -298,7 +298,7 @@ input, textarea, select, button {
     object-position: 0% 10%;
     border-radius: 0px 80px;
     transform: translateX(200%);
-    transition: 0.7s;
+    /* transition: 0.7s; */
 }
 .show-animate .value-text,
 .show-animate .value-img {
@@ -424,6 +424,7 @@ input, textarea, select, button {
     top: -8px;
     right: -8px;
     z-index: 1;
+    /* transition: 0.7s; */
 }
 .indicator__bullet img {
     position: absolute;
@@ -431,6 +432,7 @@ input, textarea, select, button {
     right: -8px;
     z-index: 2;
     display: none;
+    /* transition: 0.7s; */
 }
 .nav-indicator__text {
     color: #98A2B3;
@@ -451,6 +453,7 @@ input, textarea, select, button {
 }
 .how__nav .active .indicator__line {
     background-color: #ED772C;
+    /* transition: 0.7s; */
 }
 .how__nav .active .nav-indicator__text {
     color: #ED772C;
@@ -463,6 +466,7 @@ input, textarea, select, button {
 }
 .how__nav .before-active .indicator__line {
     background-color: #ED772C;
+    /* transition: 0.7s; */
 }
 .how-why__frame {
     height: 234px;
@@ -765,25 +769,22 @@ input, textarea, select, button {
     position: absolute;
     width: 100%;
     height: 310px;
+    /* background: bottom/100% url("/assets/img/Thao.png") no-repeat; */
 }
 .trainers-group .trainers-individual:nth-child(even) .trainers-individual__frame {
     bottom: 0;
 }
 .trainers-group .trainers-individual:nth-child(1) .trainers-individual__frame {
     border-radius: 80px 0px 80px 80px;
-    background: #2E90FA;
 }
 .trainers-group .trainers-individual:nth-child(2) .trainers-individual__frame {
     border-radius: 80px 80px 80px 0px;
-    background: #b6fa2e;
 }
 .trainers-group .trainers-individual:nth-child(3) .trainers-individual__frame {
     border-radius: 0px 80px;
-    background: #ED772C;
 }
 .trainers-group .trainers-individual:nth-child(4) .trainers-individual__frame {
     border-radius: 80px 80px 80px 0px;
-    background: #02B89A;
 }
 .trainers-btn {
     display: flex;
@@ -932,7 +933,7 @@ input, textarea, select, button {
 /* Join us */
 .join-us-wrap {
     height: 418px;
-    background-color: #cbe2e0;
+    background: center/100% url("/assets/img/Group\ 624836.png");
 }
 .join-us {
     padding: 112px 0 88px 0;
@@ -1034,6 +1035,9 @@ input, textarea, select, button {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+}
+.info-app img {
+    width: 136px;
 }
 .footer-wrap {
     background: #1D1E23;
