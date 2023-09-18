@@ -933,7 +933,7 @@ input, textarea, select, button {
 /* Join us */
 .join-us-wrap {
     height: 418px;
-    background: center/100% url("/assets/img/Group\ 624836.png");
+    background: center/100% url("../img/Group624836.png");
 }
 .join-us {
     padding: 112px 0 88px 0;
