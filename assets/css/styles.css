@@ -105,12 +105,49 @@ input, textarea, select, button {
     bottom: 0;
     opacity: 1;
 }
-.header-action__btn{
-    
+.header-action {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.header-action__btn {
+    width: 100px;
+}
+.multi-languages {
+    padding-top: 6px;
+    position: relative;
+    cursor: pointer;
+}
+.multi-languages_list {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    width: 162px;
+    background: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    display: none;
+}
+.multi-languages:hover .multi-languages_list {
+    display: block;
+}
+.multi-languages_list li {
+    padding: 10px 16px;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 12px;   
+}
+.multi-languages_list li.active {
+    color: #ED772C;
+}
+.multi-languages_list li:hover {
+    background-color: #f5f5f5;
 }
 .scrolled .navbar__link {
-    color: black;
-    
+    color: black;  
 }
 /* Hero */
 .hero {
@@ -123,21 +160,21 @@ input, textarea, select, button {
     overflow: hidden;
 }
 .hero-content {
-    max-width: 677px;
+    max-width: 850px;
     color: #ffff;
     text-align: center;
 }
 .hero__heading {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 72px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .hero__text {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .video-background {
@@ -163,6 +200,7 @@ input, textarea, select, button {
     background: #ffff;
     -webkit-text-fill-color: #ED3224;
     border: 1px solid #ED3224;
+    font-weight: 500;
 }
 /* Statistics */
 #why-us {
@@ -175,7 +213,7 @@ input, textarea, select, button {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    gap: 40px;
+    gap: 20px;
     padding: 60px 0;
     position: relative;
 }
@@ -187,7 +225,8 @@ input, textarea, select, button {
 .statistics-item {
     display: flex;
     justify-content: space-between;
-    align-items:center
+    align-items:center;
+    flex: 30%;
 }
 .number {
     font-size: 60px;
@@ -228,7 +267,7 @@ input, textarea, select, button {
     padding-top: 70px;
 }
 .value-text {
-    margin-right: -100px;
+    margin-right: -136px;
     z-index: 1;
     transform: translateX(-140%);
     transition: 0.7s;
@@ -256,7 +295,7 @@ input, textarea, select, button {
     -webkit-text-fill-color: transparent;
 }
 .value-text__highlight {
-    width: calc(568px + 24px);
+    width: calc(595px + 24px);
     position: relative;
 }
 .value-text__highlight .star1 {
@@ -635,7 +674,7 @@ input, textarea, select, button {
 .programs-item__details {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 15px;
     width: 100%;
     padding-bottom: 40px;
 }
@@ -645,6 +684,8 @@ input, textarea, select, button {
     font-size: 30px;
     font-weight: 700;
     line-height: 38px;
+    text-transform: uppercase;
+    flex: 30%
 }
 .programs-item__desc {
     color: #475467;
@@ -652,6 +693,7 @@ input, textarea, select, button {
     font-weight: 400;
     line-height: 24px;
     text-align: justify;
+    flex: 70%;
 }
 .programs-indicators {
     display: flex;
@@ -724,11 +766,11 @@ input, textarea, select, button {
 }
 .trainers-certificate__row-four {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     justify-content: space-between;
 }
 .trainers-certificate__row-four img {
-    width: 60px;
+    width: 55px;
 }
 .trainers-certificate__row-three {
     display: flex;  
@@ -737,9 +779,6 @@ input, textarea, select, button {
 }
 .trainers-certificate__row-three img {
     width: 80px;
-}
-.trainers-certificate__row-three img:first-child {
-    width: 60px;
 }
 .trainers-slider {
     position: relative;
@@ -827,7 +866,7 @@ input, textarea, select, button {
 }
 .partners-logos {
     display: flex;
-    width: 792px;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -939,7 +978,7 @@ input, textarea, select, button {
     padding: 112px 0 88px 0;
 }
 .join-us__text {
-    width: 618px;
+    width: 660px;
     color: #000;
     font-size: 60px;
     font-weight: 700;
@@ -962,6 +1001,7 @@ input, textarea, select, button {
     background: #ffff;
     -webkit-text-fill-color: #ED3224;
     border: 1px solid #ED3224;
+    font-weight: 500;
 }
 .info-wrap {
     background: #1D1E23;

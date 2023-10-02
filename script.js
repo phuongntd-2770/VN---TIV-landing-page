@@ -220,15 +220,15 @@ const reloadTrainerSlider = () => {
 }
 let refreshTrainersInterval = setInterval(()=> {trainerNextBtn.click()}, 5000)
 
-// Our Partners
-const partnersImages = document.querySelectorAll('.partners-logos img')
-partnersImages.forEach(image => {
-    let imageWidth = image.naturalWidth
-    image.style.width = (imageWidth / 2) + "px"
-})
+// // Our Partners
+// const partnersImages = document.querySelectorAll('.partners-logos img')
+// partnersImages.forEach(image => {
+//     let imageWidth = image.naturalWidth
+//     image.style.width = (imageWidth / 2) + "px"
+// })
 
 // Snapshots
-const snapshotImages = document.querySelectorAll('.snapshots-list img')
+const snapshotImages = document.querySelectorAll('.snapshots-list .picture')
 snapshotImages.forEach(img => {
     img.onclick = (e) => {
         snapshotImages.forEach( img => {
