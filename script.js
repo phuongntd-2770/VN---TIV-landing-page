@@ -37,7 +37,7 @@ window.onscroll = () => {
     // console.log(howWhyOffset)
     // console.log(top)
     // if(top >= howWhyOffset) {
-    //     const refreshInterval = setInterval(()=> {howWhyNextBtn.click()}, 5000);
+    //     const refreshInterval = setInterval(()=> {howWhyNextBtn.click()}, 7000);
     // }
 }
 
@@ -90,7 +90,7 @@ howIndicatorBullets.forEach((indicator, index) => {
     })
 })
 
-let refreshHowInterval = setInterval(()=> {howNextBtn.click()}, 5000);
+let refreshHowInterval = setInterval(()=> {howNextBtn.click()}, 7000);
 
 const reloadHowSlider = () => {
     const checkLeft = howDetailItems[activeHowIndex].offsetLeft
@@ -109,7 +109,7 @@ const reloadHowSlider = () => {
         indicator.classList.add('before-active')
     })
     clearInterval(refreshHowInterval);
-    refreshHowInterval = setInterval(()=> {howNextBtn.click()}, 5000);
+    refreshHowInterval = setInterval(()=> {howNextBtn.click()}, 7000);
 }
 
 // Why slider
@@ -136,14 +136,14 @@ whyPrevBtn.addEventListener('click', () => {
     reloadWhySlider()
 })
 
-let refreshWhyInterval = setInterval(()=> {whyNextBtn.click()}, 5000);
+let refreshWhyInterval = setInterval(()=> {whyNextBtn.click()}, 7000);
 
 const reloadWhySlider = () => {
     const checkLeft = whyDetailItems[activeWhyIndex].offsetLeft
     whyDetailList.style.left = -checkLeft + 'px'
 
     clearInterval(refreshWhyInterval);
-    refreshWhyInterval = setInterval(()=> {whyNextBtn.click()}, 5000);
+    refreshWhyInterval = setInterval(()=> {whyNextBtn.click()}, 7000);
 }
 // Program slider
 const programList = document.querySelector ('.programs-list')
@@ -170,13 +170,13 @@ programPrevBtn.onclick = (e) => {
     reloadProgramSlider()
 }
 
-let refreshProgramInterval = setInterval(()=> {programNextBtn.click()}, 5000)
+let refreshProgramInterval = setInterval(()=> {programNextBtn.click()}, 7000)
 const reloadProgramSlider = () => {
     const programsListLeft = programItems[activeProgramIndex].offsetLeft
     programList.style.left = -programsListLeft + 'px'
 
     clearInterval(refreshProgramInterval);
-    refreshProgramInterval = setInterval(()=> {programNextBtn.click()}, 5000)
+    refreshProgramInterval = setInterval(()=> {programNextBtn.click()}, 7000)
     const activeIndicator = document.querySelector('.programs-indicators__dot.active')
     activeIndicator.classList.remove('active')
     programIndicators[activeProgramIndex].classList.add('active')
@@ -216,9 +216,9 @@ const reloadTrainerSlider = () => {
     trainerList.style.left = -trainersListLeft + 'px'
 
     clearInterval(refreshTrainersInterval);
-    refreshTrainersInterval =  setInterval(()=> {trainerNextBtn.click()}, 5000)
+    refreshTrainersInterval =  setInterval(()=> {trainerNextBtn.click()}, 7000)
 }
-let refreshTrainersInterval = setInterval(()=> {trainerNextBtn.click()}, 5000)
+let refreshTrainersInterval = setInterval(()=> {trainerNextBtn.click()}, 7000)
 
 // // Our Partners
 // const partnersImages = document.querySelectorAll('.partners-logos img')

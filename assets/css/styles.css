@@ -118,10 +118,14 @@ input, textarea, select, button {
     position: relative;
     cursor: pointer;
 }
+.multi-languages .current-language{
+    width: 30px;
+    height: auto;
+}
 .multi-languages_list {
     position: absolute;
     right: 0;
-    top: 110%;
+    top: 100%;
     width: 162px;
     background: #fff;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
@@ -133,7 +137,7 @@ input, textarea, select, button {
 .multi-languages:hover .multi-languages_list {
     display: block;
 }
-.multi-languages_list li {
+.multi-languages_list li a {
     padding: 10px 16px;
     color: #344054;
     font-size: 14px;
@@ -142,7 +146,7 @@ input, textarea, select, button {
     align-items: center;
     gap: 12px;   
 }
-.multi-languages_list li.active {
+.multi-languages_list li.active span{
     color: #ED772C;
 }
 .multi-languages_list li:hover {
